@@ -82,7 +82,7 @@ public class Cascone implements Initializable {
         //Create a file chooser
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Choose an audio file.");
-        fileChooser.setInitialDirectory(new File("C:/Users/Coste/Desktop/soundfiles"));
+        fileChooser.setInitialDirectory(new File("*path to music directory*"));
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Audio Files", "*.mp3", "*.m4a"));
         FilenameLabel.setText(fileChooser.getInitialFileName());
         File song = fileChooser.showOpenDialog(stage);
@@ -282,7 +282,7 @@ public class Cascone implements Initializable {
                 //Create a file chooser
                 FileChooser fileChooser = new FileChooser();
                 fileChooser.setTitle("Choose an audio file.");
-                fileChooser.setInitialDirectory(new File("C:/Users/Coste/Desktop/soundfiles"));
+                fileChooser.setInitialDirectory(new File("*path to music directory*"));
                 fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Audio Files", "*.mp3", "*.m4a"));
                 FilenameLabel.setText(fileChooser.getInitialFileName());
                 File song = fileChooser.showOpenDialog(stage);
